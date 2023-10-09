@@ -1,0 +1,43 @@
+# default.custom.yaml
+# encoding: utf-8
+# 作者: 郭斌勇 <guobinyong@qq.com>
+
+patch:
+  ascii_composer/good_old_caps_lock: true
+  ascii_composer/switch_key:
+    Caps_Lock: commit_code
+    Shift_L: noop
+    Shift_R: noop
+    Control_L: commit_code
+    Control_R: commit_code
+  switcher: # 切换输入法的配置块
+    hotkeys: # 快捷键；可以设置多个快捷键，这样每个快捷键都生效; grave 是键盘上的 `
+      - "Control+space"
+      - "Control+Shift"
+  schema_list: #“输入选单”中激活的输入方案的schema_id；定义對於列表類型，現在無有辦法指定如何添加、消除或單一修改某項，於是要在定製檔中將整個列表替換！不能输入制表符，请用空格代替
+    - schema: wubixinshiji_pinyin    # 新世纪五笔·拼音
+    - schema: pinyin_simp    # 袖珍简化字拼音
+    - schema: wubixinshiji    # 新世纪五笔
+#    - schema: luna_pinyin    # 朙月拼音
+#    - schema: wubixinshiji_trad    # 新世纪五笔·简入繁出
+#    - schema: wubi86    # 五笔86
+#    - schema: wubi_pinyin    # 五笔·拼音
+#    - schema: wubi_trad    # 五筆·簡入繁出
+#    - schema: cangjie5    # 倉頡五代
+#    - schema: stroke    # 五筆畫
+#    - schema: luna_pinyin_fluency    # 朙月拼音·語句流
+#    - schema: luna_pinyin_simp    # 朙月拼音·简化字
+#    - schema: luna_pinyin_tw    # 朙月拼音·臺灣正體
+#    - schema: double_pinyin_flypy    # 小鶴雙拼
+#    - schema: double_pinyin_mspy    # MSPY雙拼
+#    - schema: double_pinyin_pyjj    # 拼音加加雙拼
+#    - schema: double_pinyin    # 自然碼雙拼
+#    - schema: double_pinyin_abc    # 智能ABC雙拼
+#    - schema: combo_pinyin    # 宮保拼音
+#    - schema: terra_pinyin    # 地球拼音
+#    - schema: wugniu    # 上海新派
+#    - schema: jyutping    # 粵拼
+#    - schema: quick5    # 速成
+#    - schema: sampheng    # 中古三拼
+#    - schema: soutzoe    # 蘇州吳語
+#    - schema: emoji    # Emoji
